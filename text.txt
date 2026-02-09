@@ -1,0 +1,96 @@
+import React from 'react'
+import Navbar from './components/navbar'
+
+const page = () => {
+  return (
+    <>
+   <div className='relative w-full min-h-screen bg-[#F5F5F5] flex flex-row items-center justify-center z-10'>
+    {/* main center div */}
+    <div className='absolute w-[39.875em] bg-pink-400 h-full flex flex-col border-l-[#E3E4E8] border-l-[1.5px] border-r-[#E3E4E8] border-r-[1.5px] '>
+      {/* Block1 */}
+      <div className='relative w-full h-[42.55em] bg-amber-300 border-b-[1.5px] border-b-[#E3E4E8] px-[2.3em]'>
+        {/* home heading */}
+        <div className='h-[11.80em] bg-red-600 mt-[14.13em]'>
+         
+        </div>
+        {/* home bottom para */}
+        <div className='w-full bg-red-300 h-[1em] mt-[13em] flex flex-row items-center justify-between text-[#14161c]'>
+           <p className='text-[14px]'>02:00 <span className='ml-0.5'>PM</span></p>
+           <p className='text-[14px]'>CONTACT ME</p> 
+        </div>
+      </div>
+    </div>
+   </div>
+  
+   <Navbar/>
+     </>
+  )
+}
+
+export default page
+
+
+
+ <div className='flex flex-col gap-4'>
+        <div className='mt-16 w-140 h-96  bg-[#f4f4f4] border-1.5 border-[#eeeeee]'></div>
+        <div className='flex flex-col gap-1'>
+        <p className='text-(--color-primary-text) text-[14px] tracking-[-0.14%] leading-5'>Funnel Congruence</p>
+        <p className='text-(--color-text-muted) text-[14px] tracking-[-0.14%] leading-5'>CreativeOS</p>
+        </div>
+       </div>
+
+
+
+
+
+
+
+
+    {/* block1 */}
+    <div className='w-full   bg-amber-600  relative flex items-center justify-center border-b-[1.5px] border-b-(--color-border) '>
+
+      <div className='w-[39.875em] bg-pink-300 relative  h-171   border-r-[1.5px] border-r-(--color-border)  border-l-[1.5px] border-l-(--color-border) px-[2.3em]'>
+         {/* home heading */}
+        <div className=' bg-red-600 mt-57.5  flex flex-col items-center justify-center gap-5'>
+         <div><img src='/pictures/profileimg.png' alt="Profile" className=" object-cover bg-center" /></div>
+         <div className='flex items-center justify-center flex-col gap-4'>
+          <h1 className='text-[#62636a] text-[20px] font-["caveat"] font-normal tracking-[-0.14%] '>Hey, I’m Aqib</h1>
+          <p className='text-[16px] tracking-[-0.14%] leading-[155%] text-center'>With 4+ years of experience designing B2B SaaS <br /> products,<span className='ml-1'> I’ve designed experiences across SaaS, </span><br /> <span>fintech, and ERP platforms.</span></p>
+         </div>
+        </div>
+        {/* home bottom para */}
+        <div className='w-full bg-red-300 h-[1em] mt-52.5 flex flex-row items-center justify-between text-[#14161c]'>
+           <p className='text-[14px]'>02:00 <span className='ml-0.5'>PM</span></p>
+           <p className='text-[14px]'>CONTACT ME</p> 
+        </div>
+
+         {/* Theme Changer */}
+     <div className=' absolute  top-[14.58em] -right-16.5 rounded-full gap-2 p-2 border-[1.5px] border-(--color-border) flex items-center  flex-col '>
+      {/* selector */}
+    <div 
+    className='absolute right-[-0.9em] rounded-full'
+    style={{ top: 'calc(31% - 12px)' }} >
+      <img src={Polygon.src} alt="Selector" className="object-cover bg-center" />
+    </div>
+
+      <div className='border-[1.5px] border-(--color-border)  w-5.5 h-5.5  rounded-full  '>
+      </div>
+      <div className='border-[1.5px] border-(--color-border) w-5.5 h-5.5 rounded-full object-cover bg-center '>
+        <img src={Ellip1.src} alt="Theme 1" className='object-cover w-full h-full' />
+      </div>
+      <div className='border-[1.5px] border-(--color-border) w-5.5 h-5.5 rounded-full object-cover bg-center '>
+        <img src={Ellip2.src} alt="Theme 2" className='object-cover w-full h-full' />
+      </div>
+      <div className='border-[1.5px] border-(--color-border) w-5.5 h-5.5 rounded-full object-cover bg-center '>
+        <img src={Ellip3.src} alt="Theme 3" className='object-cover w-full h-full' />
+      </div>
+      <div className='border-[1.5px] border-(--color-border) w-5.5 h-5.5 rounded-full object-cover bg-center '>
+        <img src={Ellip4.src} alt="Theme 4" className='object-cover w-full h-full' />
+      </div>
+      <div className='border-[1.5px] border-(--color-border) w-5.5 h-5.5 rounded-full object-cover bg-center '>
+        <img src={Ellip5.src} alt="Theme 5" className='object-cover w-full h-full' />
+      </div>
+     </div>
+      </div>
+
+    </div>

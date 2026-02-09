@@ -1,0 +1,21 @@
+type CaseStudyCardProps = {
+  title: string
+  client: string
+  image?: string // optional, future me image ho sakti
+}
+
+const CaseStudyCard = ({ title, client, image }: CaseStudyCardProps) => {
+  return (
+    <div className="flex flex-col gap-1">
+      <div className="w-140 h-96 bg-[#f4f4f4] border border-[#eeeeee]  overflow-hidden">
+        {image && <img src={image} alt={title} className="w-full h-full object-cover" />}
+      </div>
+      <div className="flex flex-col gap-1 mt-2">
+        <p className="text-(--color-primary-text) text-[14px] tracking-[-0.14%] leading-5">{title}</p>
+        <p className="text-(--color-text-muted) text-[14px] tracking-[-0.14%] leading-5 ">{client}</p>
+      </div>
+    </div>
+  )
+}
+
+export default CaseStudyCard
