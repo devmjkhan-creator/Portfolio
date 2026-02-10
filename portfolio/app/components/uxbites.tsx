@@ -7,7 +7,7 @@ type UxbitesProps = {
 
 const Uxbites= ({ text,image }: UxbitesProps) => {
   return (
-     <div className='w-full b gap-6  flex flex-col items-center justify-center'>
+     <div className='w-full b gap-6 flex flex-col items-center justify-center'>
                 <div className='w-full sm:h-79.75 h-50.25 bg-[#f4f4f4]'>
                     {image && <img src={image} alt="" className="w-full h-full object-cover" />}
                 </div>

@@ -93,7 +93,7 @@ const page = () => {
 
     {/* block3 */}
     <div className='w-full   flex items-center justify-center border-b border-b-(--color-border)'>
-      <div className='w-full sm:w-[39.875em]   sm:border-r gap-16.25 border-r-(--color-border) sm:border-l border-l-(--color-border) sm:px-18 px-10 sm:py-25 py-[13.80vh] flex items-center justify-center flex-col'>
+      <div className='w-full sm:w-[39.875em]   sm:border-r gap-16.25 border-r-(--color-border) sm:border-l border-l-(--color-border) sm:px-18 px-5 sm:py-25 py-[13.80vh] flex items-center justify-center flex-col'>
         <h1 className='text-[14px]'>What I Do</h1>
         <div className='text-[14px] text-[#46484E] flex flex-col gap-7'>
         <p className='tracking-[-0.14%] leading-[185%] text-center'>  I design digital products that are simple, clear, and user-focused.</p>
@@ -111,7 +111,7 @@ const page = () => {
         <h1 className='text-[14px] tracking-[-0.14%] leading-5 text-(--color-primary-text)'>Work Experience</h1>
 
         {/* InnerblockS */}
-         <div className=' w-full px-10 text-[14px] gap-8 flex flex-col justify-around text-(--color-primary-text) '>
+         <div className=' w-full sm:px-5 text-[14px] gap-8 flex flex-col justify-around text-(--color-primary-text) '>
 
 
           {/* innerblock1 */}
