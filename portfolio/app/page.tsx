@@ -22,6 +22,7 @@ import Twitercard from '../public/pictures/twittercard.svg'
 
 
 
+
 const page = () => {
   return (
     <>
@@ -37,7 +38,7 @@ const page = () => {
         <div className='  mt-[19.50vh]  flex flex-col items-center justify-center gap-5'>
          <div><img src='/pictures/profileimg.png' alt="Profile" className=" object-cover bg-center" /></div>
          <div className='flex items-center justify-center flex-col gap-4'>
-          <h1 className='text-[#62636a] text-[20px] font-["caveat"] font-normal tracking-[-0.14%] '>Hey, I’m Aqib</h1>
+          <h1 className="font-caveat text-[#62636a] text-[20px] font-normal tracking-[-0.14%]">Hey, I’m Aqib</h1>
           <p className='text-[16px] tracking-[-0.14%] leading-[155%] text-center'>With 4+ years of experience designing B2B SaaS <br /> products,<span className='ml-1'> I’ve designed experiences across SaaS, </span><br /> <span>fintech, and ERP platforms.</span></p>
          </div>
         </div>
