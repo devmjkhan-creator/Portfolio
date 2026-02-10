@@ -12,7 +12,7 @@ const CaseStudyCard = ({ title, client, image }: CaseStudyCardProps) => {
       </div>
       <div className="flex flex-col gap-1 mt-2">
         <p className="text-(--color-primary-text) text-[14px] tracking-[-0.14%] leading-5">{title}</p>
-        <p className="text-(--color-text-muted) text-[14px] tracking-[-0.14%] leading-5 ">{client}</p>
+        <p className="text-[#7F8087] text-[14px] tracking-[-0.14%] leading-5 ">{client}</p>
       </div>
     </div>
   )

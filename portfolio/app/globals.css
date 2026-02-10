@@ -4,6 +4,7 @@
   --color-primary-text: #14161c;
   --color-bg: #F5F5F5;
   --color-text-muted: #64748B;
+  --color-text-dark:#7F8087;
 }
 .font-caveat {
   font-family: var(--font-caveat), cursive;
