@@ -94,3 +94,12 @@ export default page
       </div>
 
     </div>
+
+
+
+
+    I design digital products that are simple, clear, and user-focused.
+
+My work includes websites, web apps, and product interfaces where usability and visual balance matter most. I care about how things look, but more importantly, how they work for real users.
+
+I’m constantly learning, refining my skills, and pushing my designs to be better with every project.

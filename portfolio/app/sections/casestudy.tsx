@@ -11,8 +11,8 @@ const dummyData = [
 export default function CaseStudiesSection() {
   return (
     
-        <div className='mt-16 flex flex-col gap-8 w-full '>
-          {dummyData.map((item) => (
+        <div className='mt-16 flex flex-col gap-8 sm:w-full '>
+          {dummyData.map((item) => ( 
             <CaseStudyCard
               key={item.id}
               title={item.title}

@@ -11,45 +11,45 @@ const Footer = () => {
     <>
          {/* block5 */}
     <div className='w-full  flex items-center justify-center border-b border-b-(--color-border) '>
-      <div className='w-[39.875em]  h-full border-r border-r-(--color-border) gap-[40.92px] flex flex-col items-center justify-center  border-l border-l-(--color-border) pt-[22vh] pb-[4vh]'>
+      <div className='w-full sm:max-w-[39.875em]  h-full sm:border-r border-r-(--color-border)  sm:gap-[40.92px] gap-16 flex flex-col items-center justify-center  sm:border-l border-l-(--color-border) sm:pt-[22vh] pt-[13.70vh] pb-[4vh]'>
         {/* button */}
-        <button className='rounded-4xl w-[27.40vw] h-[16.70vh]  border-(--color-border) border'><h2 className='font-medium text-[48px] '>Work with me?</h2></button>
+        <button className='rounded-4xl  sm:py-10 sm:px-10  py-6 px-10   border-(--color-border) border'><h2 className='font-medium sm:text-[48px] text-[24px] '>Work with me?</h2></button>
 
         {/* ............................ card & links............................... */}
 
         {/* container */}
-        <div className='flex flex-row gap-[0.8vw] items-center justify-between'>
+        <div className='flex flex-row sm:gap-[0.8vw] gap-3 items-center justify-between '>
          {/* innerblock1... */}
            <div className='gap-[14.73px] flex flex-col items-center '>
             <div
-            className='Card relative w-[6.20vw] h-[9.60vh] rounded-lg bg-center object-cover'>
+            className='Card relative  rounded-lg bg-center object-cover'>
             <img src="/pictures/twittercard.svg" alt="TwitterCard" className='w-full h-full bg-center object-cover ' />
-             <div> <img src="/pictures/twitter.svg" alt="TwitterLogo" className='absolute bg-center object-cover -bottom-[1.2px] -left-[1.8vw]'/></div>
+             <div> <img src="/pictures/twitter.svg" alt="TwitterLogo" className='absolute bg-center object-cover bottom-1 -left-6 '/></div>
             </div>
            <button
-           className=' text-[14px] w-[7vw] h-[4.40vh] bg-[#f4f4f4]  tracking-[-0.14%] leading-5 px-[22pxvw] py-2 border-l border-r rounded-4xl border-[#f4f4f4] border-t border-b items-center flex justify-center'>Twitter
+           className=' text-[14px] sm:w-[7vw] w-20 sm:h-[4.40vh] h-9 bg-[#F4F4F4]  tracking-[-0.14%] leading-5 sm:px-[22pxvw] px-5.5 sm:py-2 py-2 border-l border-r rounded-4xl border-[#f4f4f4] border-t border-b items-center flex justify-center'>Twitter
            </button>
            </div>
 
            <div className='gap-[14.73px] flex flex-col items-center'>
             <div
-             className='Card relative w-[6.20vw] h-[9.60vh] rounded-lg bg-center object-cover '>
+             className='Card relative rounded-lg bg-center object-cover '>
                <img src="/pictures/dribblecard.svg" alt="DribbleCard" className='w-full h-full bg-center object-cover ' />
-             <div> <img src="/pictures/dribble.svg" alt="Dribblelogo" className='absolute bg-center object-cover bottom-1 -left-[1.8vw]' /></div>
+             <div> <img src="/pictures/dribble.svg" alt="Dribblelogo" className='absolute bg-center object-cover  bottom-1 -left-6 ' /></div>
              </div>
        
            <button 
-           className='text-[14px] w-[7vw] h-[4.40vh] bg-[#f4f4f4]  tracking-[-0.14%] leading-5 px-5.5 py-2 border-l border-r rounded-4xl border-[#f4f4f4] border-t border-b items-center flex justify-center'>Dribbble
+           className='text-[14px]  sm:w-[7vw] w-20 sm:h-[4.40vh] h-9 bg-[#f4f4f4]  tracking-[-0.14%] leading-5 sm:px-[22pxvw] px-5.5 sm:py-2 py-2 border-l border-r rounded-4xl border-[#f4f4f4] border-t border-b items-center flex justify-center'>Dribbble
            </button>
            </div>
 
            <div className='gap-[14.73px] flex flex-col items-center '>
             <div
-             className='Card w-[6.20vw] relative h-[9.60vh] rounded-lg bg-center object-cover'>
-               <img src="/pictures/linkidencard.svg" alt="DribbleCard" className='w-full h-full bg-center object-cover ' />
-               <div><img src="/pictures/linkiden.svg" alt="Dribblelogo" className='absolute bg-center object-cover bottom-2 -left-[1.8vw]' /></div>
+             className='Card  relative  rounded-lg bg-center object-cover'>
+               <img src="/pictures/linkidencard.svg" alt="LinkidenCard" className='w-full h-full bg-center object-cover ' />
+               <div><img src="/pictures/linkiden.svg" alt="Linkidenlogo" className='absolute bg-center object-cover  bottom-3 -left-6 ' /></div>
              </div>
-           <button className='text-[14px] w-[7vw] h-[4.40vh] bg-[#f4f4f4]  tracking-[-0.14%] leading-5 px-5.5 py-2 border-l border-r rounded-4xl border-[#f4f4f4] border-t border-b items-center flex justify-center'>LinkedIn</button>
+           <button className='text-[14px]   sm:w-[7vw] w-20 sm:h-[4.40vh] h-9 bg-[#f4f4f4]  tracking-[-0.14%] leading-5 sm:px-[22pxvw] px-5.5 sm:py-2 py-2 border-l border-r rounded-4xl border-[#f4f4f4] border-t border-b items-center flex justify-center'>LinkedIn</button>
            </div>
 
         </div>
@@ -58,7 +58,7 @@ const Footer = () => {
     </div>
     {/* block6 */}
     <div className='w-full  flex items-center justify-center '>
-      <div className='w-[39.875em] h-full border-r border-r-(--color-border)  border-l border-l-(--color-border) py-10 items-center flex justify-center'>
+      <div className='w-full sm:w-[39.875em] h-full sm:border-r border-r-(--color-border)  sm:border-l border-l-(--color-border) sm:py-10 py-8 items-center flex justify-center'>
         <p className='text-[14px] tracking-[-0.6%] leading-5 text-(--color-text-dark)'>© 2026 Aqib.</p>
       </div>
     </div>

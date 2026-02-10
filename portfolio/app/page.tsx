@@ -19,15 +19,15 @@ const page = () => {
   return (
     <>
     <Navbar/>
-  <div className='relative w-full top-[8.6vh] min-h-screen flex flex-col'>
+  <div className='relative w-full sm:top-[8.6vh] min-h-screen top-[8.10vh] flex flex-col bg-[(--color-bg)]'>
 
 
     {/* block1 */}
-    <div className='w-full    relative flex items-center justify-center border-b border-b-(--color-border) '>
+    <div className='w-full relative flex items-center justify-center border-b border-b-(--color-border) '>
 
-      <div className='w-full max-w-[39.875em]  relative pb-8 border-r border-r-(--color-border)  border-l border-l-(--color-border) px-[2.3em]'>
+      <div className='w-full max-w-[39.875em] mx-auto relative sm:pb-8 pb-25 sm:border-r border-r-(--color-border) px-4 sm:px-[2.3em]  sm:border-l border-l-(--color-border)'>
          {/* home heading */}
-        <div className='  mt-[19.50vh]  flex flex-col items-center justify-center gap-5'>
+        <div className='  sm:mt-[19.50vh]  flex flex-col items-center justify-center gap-5 mt-20'>
          <div><img src='/pictures/profileimg.svg' alt="Profile" className=" object-cover bg-center" /></div>
          <div className='flex items-center justify-center flex-col gap-4'>
           <h1 className="font-caveat text-[#62636a] text-[20px] font-normal tracking-[-0.14%]">Hey, I’m Aqib</h1>
@@ -35,13 +35,13 @@ const page = () => {
          </div>
         </div>
         {/* home bottom para */}
-        <div className='w-full  h-[1em] mt-[25.80vh] flex flex-row items-center justify-between text-[#14161c]'>
+        <div className='w-full hidden sm:flex h-[1em] mt-[25.80vh]  flex-row items-center justify-between text-[#14161c]'>
            <p className='text-[14px] tracking-[-0.14%] leading-5'>02:00 <span className='ml-0.5'>PM</span></p>
            <p className='text-[14px] tracking-[-0.14%] leading-5'>CONTACT ME</p> 
         </div>
 
          {/* Theme Changer */}
-     <div className=' absolute  top-[20.90vh] -right-16.5 rounded-full gap-2 p-2 border border-(--color-border) flex items-center  flex-col '>
+     <div className=' absolute  top-[20.90vh] -right-16.5 rounded-full gap-2 p-2 border border-(--color-border) hidden sm:flex items-center  flex-col '>
       {/* selector */}
     <div 
     className='absolute right-[-0.7em] rounded-full'
@@ -74,7 +74,7 @@ const page = () => {
 
     {/* block2 */}
     <div className='w-full  flex items-center justify-center border-b border-b-(--color-border) '>
-      <div className='w-[39.875em]  h-full border-r border-r-(--color-border) px-10 py-[12.30vh]  border-l border-l-(--color-border) flex flex-col items-center justify-center'>
+      <div className='w-full sm:w-[39.875em]  h-full sm:border-r border-r-(--color-border) px-10 sm:py-[12.30vh] py-[13.80vh]  sm:border-l border-l-(--color-border) flex flex-col items-center justify-center'>
        <p className='tracking-[-0.14%] leading-5 text-[14px] '>Casestudies</p>
         {/* Innerblock */}
 
@@ -85,12 +85,12 @@ const page = () => {
 
     {/* block3 */}
     <div className='w-full   flex items-center justify-center border-b border-b-(--color-border)'>
-      <div className='w-[39.875em]   border-r gap-16.25 border-r-(--color-border)  border-l border-l-(--color-border) px-18 py-25 flex items-center justify-center flex-col'>
+      <div className='w-full sm:w-[39.875em]   sm:border-r gap-16.25 border-r-(--color-border)  sm:border-l border-l-(--color-border) sm:px-18 px-4 sm:py-25 py-[13.80vh] flex items-center justify-center flex-col'>
         <h1 className='text-[14px]'>What I Do</h1>
         <div className='text-[14px] text-[#46484E] flex flex-col gap-7'>
         <p className='tracking-[-0.14%] leading-[185%] text-center'>  I design digital products that are simple, clear, and user-focused.</p>
-        <p className='text-center tracking-[-0.14%] leading-[185%]'> My work includes websites, web apps, and product interfaces where <br /> usability and visual balance matter most. I care about how things look, but <br /> more importantly, how they work for real users.</p>
-        <p className='text-center tracking-[-0.14%] leading-[185%]'> I’m constantly learning, refining my skills, and pushing my designs to be <br /> better with every project.</p>
+        <p className='text-center tracking-[-0.14%] leading-[185%]'>My work includes websites, web apps, and product interfaces where usability and visual balance matter most. I care about how things look, but more importantly, how they work for real users.</p>
+        <p className='text-center tracking-[-0.14%] leading-[185%] sm:ml-0 ml-[9.48px]'> I’m constantly learning, refining my skills, and pushing my designs to be better with every project.</p>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@ const page = () => {
 
     {/* block4 */}
     <div className='w-full   flex items-center justify-center border-b border-b-(--color-border)'>
-      <div className='w-[39.875em]  py-[12.30vh]  gap-[7.80vh] border-r border-r-(--color-border) flex-col  border-l border-l-(--color-border) flex items-center '>
+      <div className='w-full  sm:w-[39.875em]  sm:py-[12.30vh] py-[13.80vh]  gap-[7.80vh] sm:border-r border-r-(--color-border) flex-col  sm:border-l border-l-(--color-border) flex items-center '>
         <h1 className='text-[14px] tracking-[-0.14%] leading-5 text-(--color-primary-text)'>Work Experience</h1>
 
         {/* InnerblockS */}
@@ -107,7 +107,7 @@ const page = () => {
 
 
           {/* innerblock1 */}
-          <div className='flex flex-row pb-8 justify-between border-b-(--color-border) border-b'>
+          <div className='flex sm:flex-row flex-col gap-4 sm:gap-0 pb-8 justify-between border-b-(--color-border) border-b'>
             <div className=''><p className='flex flex-row tracking-[-0.14%] leading-5'>Product Designer <span className='ml-2 flex items-center tracking-[-0.14%] leading-5 text-(--color-text-dark)'>at</span>    <span className='ml-2 flex items-center tracking-[-0.14%] leading-5'> 
               <img src={Logo1.src} alt="CreativeOS Logo" className='w-5 h-5 ' /></span>
                 <span className='ml-2 flex items-center tracking-[-0.14%] leading-5'>CreativeOS</span></p></div>
@@ -115,7 +115,7 @@ const page = () => {
           </div>
 
             {/* innerblock2 */}
-            <div className='flex flex-row pb-8  border-b-(--color-border) border-b justify-between'>
+            <div className='flex sm:flex-row flex-col gap-4 sm:gap-0 pb-8  border-b-(--color-border) border-b justify-between'>
               <div><p className='flex flex-row tracking-[-0.14%] leading-5'>Freelance Product Designer  <span className='ml-2 tracking-[-0.14%] leading-5 flex items-center text-(--color-text-dark)'>at</span> 
                <span className='ml-2 flex items-center w-5 h-5 rounded-full overflow-hidden'>
                 <img src={Logo2.src} alt="Upwork Logo" /></span> 
@@ -124,19 +124,19 @@ const page = () => {
             </div>
 
                  {/* innerblock3 */}
-            <div className='flex flex-row pb-8 border-b-(--color-border) border-b justify-between'>
+            <div className='flex sm:flex-row flex-col gap-4 sm:gap-0 pb-8 border-b-(--color-border) border-b justify-between'>
               <div><p className='flex flex-row tracking-[-0.14%] leading-5'>Product Designer <span className='ml-2 flex items-center tracking-[-0.14%] text-(--color-text-dark) leading-5'>at</span>   <span className='ml-2 flex items-center tracking-[-0.14%] leading-5'><img src={Logo5.src} alt="KUST Logo" /></span> <span className='ml-2 flex items-center tracking-[-0.14%] leading-5'> KUST - FYP </span></p></div> 
               <div><p className='tracking-[-0.14%] leading-5 text-(--color-text-dark)'>2021 - 2023</p></div>
             </div>
          
                {/* innerblock4 */}
-            <div className='flex flex-row pb-8 border-b-(--color-border) border-b justify-between'>
+            <div className='flex sm:flex-row flex-col gap-4 sm:gap-0 pb-8 border-b-(--color-border) border-b justify-between'>
               <div><p className='flex flex-row tracking-[-0.14%] leading-5'> UXUI Designer <span className='ml-2 tracking-[-0.14%] leading-5 flex items-center text-(--color-text-dark)'>at</span>  <span className='ml-2 flex items-center tracking-[-0.14%] leading-5'><img src={Logo3.src} alt="Infusible Coders Logo" /></span> <span className='ml-2 flex items-center tracking-[-0.14%] leading-5'>Infusible Coders</span> </p></div>
               <div><p className='tracking-[-0.14%] leading-5 text-(--color-text-dark)'>2021 - 2023</p></div>
             </div>
 
               {/* innerblock5 */}
-            <div className='flex flex-row justify-between'>
+            <div className='flex sm:flex-row flex-col gap-4 sm:gap-0 justify-between'>
               <div><p className='flex flex-row tracking-[-0.14%] leading-5'>Graphic & UI Designer <span className='ml-2 tracking-[-0.14%] leading-5 flex items-center text-(--color-text-dark)'>at</span>  <span className='ml-2 flex items-center tracking-[-0.14%] leading-5'><img src={Logo4.src} alt="94 Productions Logo" /></span> <span className='ml-2 flex items-center tracking-[-0.14%] leading-5'>94 Productions</span> </p></div>
               <div><p className='tracking-[-0.14%] leading-5 text-(--color-text-dark)'>2020 - 2023</p></div>
             </div>
