@@ -82,7 +82,7 @@ const page = () => {
 
     {/* block2 */}
     <div className='w-full  flex items-center justify-center border-b border-b-(--color-border) '>
-      <div className='w-full sm:w-[39.875em]  h-full sm:border-r border-r-(--color-border) px-10 sm:py-[12.30vh] py-[13.80vh]  sm:border-l border-l-(--color-border) flex flex-col items-center justify-center'>
+      <div className='w-full sm:w-[39.875em]  h-full sm:border-r border-r-(--color-border) px-5 sm:py-[12.30vh] py-[13.80vh]  sm:border-l border-l-(--color-border) flex flex-col items-center justify-center'>
        <p className='tracking-[-0.14%] leading-5 text-[14px] '>Casestudies</p>
         {/* Innerblock */}
 
