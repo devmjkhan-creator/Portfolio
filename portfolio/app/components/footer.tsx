@@ -3,7 +3,7 @@ import Dribble from '../public/pictures/dribble.svg'
 import Dribblecard from '../public/pictures/dribblecard.svg'
 import Linkiden from '../public/pictures/linkiden.svg'
 import Linkidencard from '../public/pictures/linkidencard.svg'
-import Twiter from '../public/pictures/twitter.svg'
+
 import Twitercard from '../public/pictures/twittercard.svg'
 import Image from 'next/image'
 
@@ -26,7 +26,13 @@ const Footer = () => {
             className='Card relative rounded-lg bg-center object-cover'>
             <img src="/pictures/twittercard.svg" alt="TwitterCard" className='w-full h-full bg-center object-cover ' />
              <div> 
-                <img src="/pictures/twitter.svg" alt="TwitterLogo" className='absolute bg-center object-contain bottom-1 -left-6 '/></div>
+                <Image 
+               src="/pictures/twitter.svg"
+               alt="TwitterLogo"
+               width={45}
+               height={45}
+               className="object-contain  bottom-1 -left-6 absolute"
+                /> </div>
             </div>
            <button
            className=' text-[14px] sm:w-[7vw] w-20 sm:h-[4.40vh] h-9 bg-[#F4F4F4]  tracking-[-0.14%] leading-5 sm:px-[22pxvw] px-5.5 sm:py-2 py-2 border-l border-r rounded-4xl border-[#f4f4f4] border-t border-b items-center flex justify-center'>Twitter
