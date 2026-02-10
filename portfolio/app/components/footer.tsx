@@ -12,7 +12,7 @@ const Footer = () => {
     <>
          {/* block5 */}
     <div className='w-full  flex items-center justify-center border-b border-b-(--color-border) '>
-      <div className='w-full sm:max-w-[39.875em]  h-full sm:border-r border-r-(--color-border)  sm:gap-[40.92px] gap-16 flex flex-col items-center justify-center  sm:border-l border-l-(--color-border) sm:pt-[22vh] pt-[13.70vh] pb-[4vh]'>
+      <div className='w-full sm:max-w-[39.875em]  h-full sm:border-r border-r-(--color-border)  sm:gap-[40.92px] gap-16 flex flex-col items-center justify-center  sm:border-l border-l-(--color-border) sm:pt-[22vh] pt-[13.70vh] pb-[4vh] sm:px-0 px-5'>
         {/* button */}
         <button className='rounded-4xl  sm:py-10 sm:px-10  py-6 px-10   border-(--color-border) border'><h2 className='font-medium sm:text-[48px] text-[24px] '>Work with me?</h2></button>
 

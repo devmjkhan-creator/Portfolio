@@ -23,15 +23,23 @@ const page = () => {
 
 
     {/* block1 */}
-    <div className='w-full relative flex items-center justify-center border-b border-b-(--color-border) '>
+    <div className='w-full relative flex items-center justify-center border-b border-b-(--color-border)'>
 
-      <div className='w-full max-w-[39.875em] mx-auto relative sm:pb-8 pb-25 sm:border-r border-r-(--color-border) px-4 sm:px-[2.3em]  sm:border-l border-l-(--color-border)'>
+      <div className='w-full max-w-[39.875em] mx-auto relative sm:pb-8 pb-25 sm:border-r border-r-(--color-border) px-5 sm:px-[2.3em]  sm:border-l border-l-(--color-border)'>
          {/* home heading */}
         <div className='  sm:mt-[19.50vh]  flex flex-col items-center justify-center gap-5 mt-20'>
          <div><img src='/pictures/profileimg.svg' alt="Profile" className=" object-cover bg-center" /></div>
-         <div className='flex items-center justify-center flex-col gap-4'>
+         <div className='flex items-center justify-center flex-col gap-4  sm:px-19 px-0'>
           <h1 className="font-caveat text-[#62636a] text-[20px] font-normal tracking-[-0.14%]">Hey, I’m Aqib</h1>
-          <p className='text-[16px] tracking-[-0.14%] leading-[155%] text-center'>With 4+ years of experience designing B2B SaaS <br /> products,<span className='ml-1'> I’ve designed experiences across SaaS, </span><br /> <span>fintech, and ERP platforms.</span></p>
+          <p className='text-[16px] tracking-[-0.14%] leading-[155%] text-center '>
+              <span className='block sm:hidden'>
+                With 4+ years of experience designing <br />
+               B2B SaaS products, I’ve designed <br />
+                 experiences across SaaS, fintech, <br />
+                and ERP platforms.
+                </span>
+            <span className='hidden sm:inline'>With 4+ years of experience designing B2B SaaS products, I’ve designed experiences across SaaS, fintech, and ERP platforms.</span>
+            </p>
          </div>
         </div>
         {/* home bottom para */}
@@ -85,7 +93,7 @@ const page = () => {
 
     {/* block3 */}
     <div className='w-full   flex items-center justify-center border-b border-b-(--color-border)'>
-      <div className='w-full sm:w-[39.875em]   sm:border-r gap-16.25 border-r-(--color-border)  sm:border-l border-l-(--color-border) sm:px-18 px-4 sm:py-25 py-[13.80vh] flex items-center justify-center flex-col'>
+      <div className='w-full sm:w-[39.875em]   sm:border-r gap-16.25 border-r-(--color-border) sm:border-l border-l-(--color-border) sm:px-18 px-10 sm:py-25 py-[13.80vh] flex items-center justify-center flex-col'>
         <h1 className='text-[14px]'>What I Do</h1>
         <div className='text-[14px] text-[#46484E] flex flex-col gap-7'>
         <p className='tracking-[-0.14%] leading-[185%] text-center'>  I design digital products that are simple, clear, and user-focused.</p>
@@ -99,7 +107,7 @@ const page = () => {
 
     {/* block4 */}
     <div className='w-full   flex items-center justify-center border-b border-b-(--color-border)'>
-      <div className='w-full  sm:w-[39.875em]  sm:py-[12.30vh] py-[13.80vh]  gap-[7.80vh] sm:border-r border-r-(--color-border) flex-col  sm:border-l border-l-(--color-border) flex items-center '>
+      <div className='w-full  sm:w-[39.875em]  sm:py-[12.30vh] py-[13.80vh]  gap-[7.80vh] sm:border-r border-r-(--color-border) flex-col  sm:border-l border-l-(--color-border) flex items-center sm:px-0 px-5'>
         <h1 className='text-[14px] tracking-[-0.14%] leading-5 text-(--color-primary-text)'>Work Experience</h1>
 
         {/* InnerblockS */}
