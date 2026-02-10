@@ -1,10 +1,11 @@
 @import "tailwindcss";
 :root {
   --color-border:#E3E4E8 ;
-  --color-primary-text: #14161c;
+  --color-primary-text: #14161c; 
   --color-bg: #FFFFFF;
   --color-text-muted: #64748B;
   --color-text-dark:#7F8087;
+  --color-para:#46484E;
 }
 .font-caveat {
   font-family: var(--font-caveat), cursive;

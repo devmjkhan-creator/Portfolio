@@ -19,7 +19,7 @@ const page = () => {
   return (
     <>
     <Navbar/>
-  <div className='relative w-full sm:top-[8.6vh] min-h-screen top-[8.10vh] flex flex-col bg-[(--color-bg)]'>
+  <div className='relative w-full  min-h-screen  flex flex-col bg-[(--color-bg)]'>
 
 
     {/* block1 */}
