@@ -28,7 +28,11 @@ const Footer = () => {
              <div> <img
             src="/pictures/twitter.svg"
             alt="TwitterLogo"
-            className="absolute left-[-24px] bottom-[4px] w-[44px] h-[44px] object-contain"
+            className="absolute -left-6 bottom-1 w-11 h-11 object-contain"
+            style={{
+    imageRendering: 'auto',
+    shapeRendering: 'geometricPrecision'
+            }}
 />
                     </div>
             </div>
