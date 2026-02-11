@@ -5,19 +5,288 @@ in components:
 
 
 
-  <div className=' flex flex-col gap-6 bg-pink-400'>
+ <div className="max-w-[39.875em] mx-auto px-5 py-20 flex flex-col gap-16">
+
+        {/* Back Button */}
+        <button onClick={() => history.back()}>← Back</button>
+
+        {/* Title + Intro */}
+        <div>
+          <h1>{caseStudy.title}</h1>
+          <p>{caseStudy.description}</p>
+        </div>
+
+        {/* Meta (Compulsory) */}
+        <div className="grid grid-cols-2 gap-6">
+          <MetaItem title="Industry" value={caseStudy.meta.industry} />
+          <MetaItem title="Role" value={caseStudy.meta.role} />
+          <MetaItem title="Company" value={caseStudy.meta.company} />
+          <MetaItem title="Date" value={caseStudy.meta.date} />
+        </div>
+
+        {/* Dynamic Blocks */}
+        <CaseStudyRenderer blocks={caseStudy.contentBlocks} />
+
+      </div>
 
 
-                     {/* In blocks container */}
-                    <div className='flex flex-col gap-4'>
-
-                    <div className='w-full h-96 bg-[#f4f4f4] border border-[#EEEEEE]'></div>
-                 <div className='flex flex-col gap-1'>
-                        <p className='text-[14px] tracking-[-0.14%] leading-5 text-[#14161B] '>Funnel Congruence</p>
-                        <p className='text-(--color-text-dark) text-[14px] tracking-[-0.14%] leading-5'>CreativeOS</p>
-                    </div>
-
-                    </div>
 
 
-                 </div>
+
+
+
+"use client";
+
+import { useParams } from "next/navigation";
+import Navbar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
+import MetaItem from "@/app/components/metaitem";
+import CaseStudyRenderer from "@/app/components/casestudyrenderer";
+import { Block } from "@/app/components/casestudyrenderer";
+import Arrowleft from "@/public/pictures/arrow-left.svg"
+
+
+const CASE_STUDIES: {
+  slug: string;
+  title: string;
+  description: string;
+  meta: { industry: string; role: string; company: string; date: string };
+  contentBlocks: Block[];
+}[] = [
+  {
+    slug: "funnel-congruence",
+    title: "Funnel Congruence",
+    description: "Project intro paragraph",
+    meta: { industry: "SaaS", role: "UI/UX Design", company: "CreativeOS", date: "2025" },
+    contentBlocks: [
+      { _type: "textBlock", heading: "Overview", text: "Project overview..." },
+      { _type: "imageBlock", image: "/img1.jpg" },
+    ],
+  },
+  {
+    slug: "landing-optimization",
+    title: "Landing Optimization",
+    description: "Landing page improvement project",
+    meta: { industry: "Marketing", role: "UI/UX", company: "BrandX", date: "2025" },
+    contentBlocks: [
+      { _type: "textBlock", heading: "Overview", text: "Landing optimization overview..." },
+      { _type: "imageBlock", image: "/img2.jpg" },
+    ],
+  },
+  {
+    slug: "mobile-app-redesign",
+    title: "Mobile App Redesign",
+    description: "Redesign of mobile app",
+    meta: { industry: "App Design", role: "UI/UX", company: "Appy", date: "2025" },
+    contentBlocks: [
+      { _type: "textBlock", heading: "Overview", text: "Mobile app redesign overview..." },
+      { _type: "imageBlock", image: "/img3.jpg" },
+    ],
+  },
+];
+export default function CaseStudyDetailPage() {
+  const { slug } = useParams();
+
+  const caseStudy = CASE_STUDIES.find((item) => item.slug === slug);
+
+  if (!caseStudy) return <div>Not found</div>;
+
+  return (
+    <>
+      <Navbar />
+    <div className="w-full min-h-screen relative flex items-center  flex-col bg-red-500 font-inter">
+        <div className="w-full bg-amber-400 flex items-center justify-center  border-b border-b-(--color-border)">
+            {/* Center Div */}
+        <div className="w-full relative  max-w-[39.875em] bg-green-400 items-center sm:border-r border-r-(--color-border) sm:border-l border-l-(--color-border)  sm:px-10 px-5 sm:pt-7.5 pt-20 sm:pb-25 pb-25 flex flex-col gap-13 sm:gap-25">
+         <div className="flex flex-row bg-purple-300 items-center w-full">
+            <i><img src={Arrowleft.src} alt="" /></i>
+             <p>Back</p>
+         </div>
+         <div className="w-full bg-cyan-300 flex flex-col items-center gap-10">
+         {/* CompulsoryBlock */}
+         <div className="w-full flex flex-col gap-4 bg-green-800">
+
+             <p className="text-(--color-text-black) text-[14px] tracking-[-0.14%] leading-5">Paybill - Manage & Pay your Bills Easily</p>
+             <p className="text-(--color-text-dark) text-[14px] tracking-[-0.14%] leading-5">PayBill is a bill payment platform where customers can link multiple payment methods to pay their bills.</p>
+            <div className="flex flex-col  gap-3  bg-pink-300">
+             <div className="text-[14px] tracking-[-0.14%] leading-5 flex flex-row w-52.5 items-center">
+               <div className="w-24  bg-green-300"> <p className="text-(--color-text-dark)">Industry</p></div>
+                <p className="text-(--color-text-black) items-start">Fintech</p>
+             </div>
+              <div className="text-[14px] tracking-[-0.14%] leading-5 flex flex-row w-52.5 items-center">
+               <div className="w-24  bg-green-300"> <p className="text-(--color-text-dark) ">Role</p></div>
+                <p className="text-(--color-text-black)">Product Designer</p>
+             </div>
+              <div className="text-[14px] tracking-[-0.14%] leading-5 flex flex-row w-52.5 items-center">
+                <div className="w-24  bg-green-300"><p className="text-(--color-text-dark) ">Company</p></div>
+                <p className="text-(--color-text-black)">CreativeOS</p>
+             </div>
+              <div className="text-[14px] tracking-[-0.14%] leading-5 flex flex-row w-52.5 items-center">
+               <div className="w-24  bg-green-300"><p className="text-(--color-text-dark)">Date</p></div>
+                <p className="text-(--color-text-black)">2025</p>
+             </div>
+            </div>
+         </div>
+
+           <div className="w-full bg-pink-700 gap-8 flex flex-col">
+
+            <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+
+            <div className="flex flex-col gap-3">
+                <h1 className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">A Bit About Me</h1> 
+            <p className="text-[14px] tracking-[-0.14%] leading-[185%] text-(--color-text-dark)">I am a product designer and freelancer who loves creating easy-to-use apps. In this case study, I share my first project with the Paybills app, where I built a bill payment app from scratch. This project shows my skills in understanding user needs, doing thorough research, and designing an intuitive solution.</p>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Context</p>
+              <p className="text-[14px] tracking-[-0.14%] leading-[185%] text-(--color-text-dark)">In today’s fast-paced world, users are seeking quick and convenient ways to manage their bill payments. However, many existing payment apps, such as Easypaisa and JazzCash, are designed to work exclusively with their own payment systems, limiting users' choices. This lack of flexibility often leads to frustration as users struggle to find a streamlined solution for paying their bills. Additionally, many apps bundle bill payments with other services, complicating navigation and making the process more time-consuming.</p>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Problem Statement</p>
+              <p className="text-[14px] tracking-[-0.14%] leading-[185%] text-(--color-text-dark)">In today’s fast-paced world, users are seeking quick and convenient ways to manage their bill payments. However, many existing payment apps, such as Easypaisa and JazzCash, are designed to work exclusively with their own payment systems, limiting users' choices. This lack of flexibility often leads to frustration as users struggle to find a streamlined solution for paying their bills. Additionally, many apps bundle bill payments with other services, complicating navigation and making the process more time-consuming.</p>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Crafted Solution</p>
+              <p className="text-[14px] tracking-[-0.14%] leading-[185%] text-(--color-text-dark)">In today’s fast-paced world, users are seeking quick and convenient ways to manage their bill payments. However, many existing payment apps, such as Easypaisa and JazzCash, are designed to work exclusively with their own payment systems, limiting users' choices. This lack of flexibility often leads to frustration as users struggle to find a streamlined solution for paying their bills. Additionally, many apps bundle bill payments with other services, complicating navigation and making the process more time-consuming.</p>
+            </div>
+
+             <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+
+             <div className="flex flex-col gap-3">
+              <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Why did I choose this project?</p>
+              <p className="text-[14px] tracking-[-0.14%] leading-[185%] text-(--color-text-dark)">In today’s fast-paced world, users are seeking quick and convenient ways to manage their bill payments. However, many existing payment apps, such as Easypaisa and JazzCash, are designed to work exclusively with their own payment systems, limiting users' choices. This lack of flexibility often leads to frustration as users struggle to find a streamlined solution for paying their bills. Additionally, many apps bundle bill payments with other services, complicating navigation and making the process more time-consuming.</p>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Design Process</p>
+              <p className="text-[14px] tracking-[-0.14%] leading-[185%] text-(--color-text-dark)">In today’s fast-paced world, users are seeking quick and convenient ways to manage their bill payments. However, many existing payment apps, such as Easypaisa and JazzCash, are designed to work exclusively with their own payment systems, limiting users' choices. This lack of flexibility often leads to frustration as users struggle to find a streamlined solution for paying their bills. Additionally, many apps bundle bill payments with other services, complicating navigation and making the process more time-consuming.</p>
+            </div>
+
+            <div className="flex flex-col gap-3 items-center">
+                  <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+                  <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Information Architecture</p>
+            </div>
+
+            <div className="flex flex-col gap-3 items-center">
+                  <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+                  <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Journey Mapping</p>
+            </div>
+           {/* two paragraphs block */}
+            <div className="flex flex-col gap-3">
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Based on my research, I designed an IA Map and a Journey Map. The Journey Map greatly helps me understand user thoughts and emotions, allowing me to identify opportunities for users.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+            </div>
+
+            {/* imageblock */}
+            <div className="flex flex-col gap-3 items-center">
+                  <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+                  <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Main Category Screen</p>
+            </div>
+
+            {/* three paragraphs block */}
+            <div className="flex flex-col gap-3">
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Based on my research, I designed an IA Map and a Journey Map. The Journey Map greatly helps me understand user thoughts and emotions, allowing me to identify opportunities for users.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+            </div>
+
+            {/* imageblock */}
+            <div className="flex flex-col gap-3 items-center">
+                  <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+                  <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Bill Company Selection</p>
+            </div>
+            
+            {/* two paragraphs block */}
+            <div className="flex flex-col gap-3">
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Based on my research, I designed an IA Map and a Journey Map. The Journey Map greatly helps me understand user thoughts and emotions, allowing me to identify opportunities for users.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+            </div>
+
+              {/* imageblock */}
+            <div className="flex flex-col gap-3 items-center">
+                  <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+                  <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Searching Bill Category or Company</p>
+            </div>
+
+              {/* two paragraphs block */}
+            <div className="flex flex-col gap-3">
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Based on my research, I designed an IA Map and a Journey Map. The Journey Map greatly helps me understand user thoughts and emotions, allowing me to identify opportunities for users.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+            </div>
+
+              {/* imageblock */}
+            <div className="flex flex-col gap-3 items-center">
+                  <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+                  <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Bill Detail Screen</p>
+            </div>
+
+             {/* two paragraphs block */}
+            <div className="flex flex-col gap-3">
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Based on my research, I designed an IA Map and a Journey Map. The Journey Map greatly helps me understand user thoughts and emotions, allowing me to identify opportunities for users.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+            </div>
+
+            
+            {/* imageblock */}
+            <div className="flex flex-col gap-3 items-center">
+                  <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+                  <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Bill Breakdown</p>
+            </div>
+
+            {/* two paragraphs block */}
+            <div className="flex flex-col gap-3">
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Based on my research, I designed an IA Map and a Journey Map. The Journey Map greatly helps me understand user thoughts and emotions, allowing me to identify opportunities for users.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+            </div>
+
+            {/* imageblock */}
+            <div className="flex flex-col gap-3 items-center">
+                  <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+                  <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Added Payment Methods</p>
+            </div>
+
+            {/* two paragraphs block */}
+            <div className="flex flex-col gap-3">
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Based on my research, I designed an IA Map and a Journey Map. The Journey Map greatly helps me understand user thoughts and emotions, allowing me to identify opportunities for users.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+            </div>
+            
+             {/* imageblock */}
+            <div className="flex flex-col gap-3 items-center">
+                  <div className="bg-[#EEEEEE] w-full h-79.75"></div>
+                  <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Adding Payment Method</p>
+            </div>
+            
+             {/* three paragraphs block */}
+            <div className="flex flex-col gap-3">
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Based on my research, I designed an IA Map and a Journey Map. The Journey Map greatly helps me understand user thoughts and emotions, allowing me to identify opportunities for users.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+            </div>
+
+
+            {/* two paragraphs block */}
+            <div className="flex flex-col gap-3">
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Based on my research, I designed an IA Map and a Journey Map. The Journey Map greatly helps me understand user thoughts and emotions, allowing me to identify opportunities for users.</p>
+                <p className="tracking-[-0.6%] leading-5 text-[14px] text-(color-black)">Now, I’ll provide a screen-by-screen breakdown, highlighting the problems and the features I’ve added to address them.</p>
+            </div>
+            
+
+
+
+           </div>
+
+           </div>
+         
+
+
+        </div>
+        </div>
+
+    </div>
+    
+    </>
+  );
+}

@@ -39,6 +39,7 @@ export default function RootLayout({
           ${geistSans.variable}
           ${geistMono.variable}
           ${caveat.variable}
+          ${inter.variable}
           antialiased
         `}
       >
@@ -47,11 +48,3 @@ export default function RootLayout({
     </html>
   );
 }
-<body
-  className={`
-    ${geistSans.variable}
-    ${geistMono.variable}
-    ${caveat.className}
-    antialiased
-  `}
-></body>

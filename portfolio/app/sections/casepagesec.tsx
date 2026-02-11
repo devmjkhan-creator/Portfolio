@@ -1,8 +1,8 @@
 import Casestudypage from "../components/casestudypage";
 
 const dummmyData=[
-  {id:1 , title:"Funnel Congruence" , client:"CreativeOS" , image:"" },
-  {id:2 , title:"Funnel Congruence" , client:"CreativeOS" , image:"" },
+  {id:1 , title:"Funnel Congruence" , client:"CreativeOS" , image:"" ,slug:"landing-optimization" },
+  {id:2 , title:"Funnel Congruence" , client:"CreativeOS" , image:"" ,slug :"funnel-congruence" },
 ]
 
 export default function Casepagesec(){
@@ -15,6 +15,7 @@ export default function Casepagesec(){
             title={item.title}
             client={item.client}
             image={item.image}
+            slug={item.slug}
             />
           ))
         }
