@@ -1,9 +1,23 @@
- <div className='flex flex-col items-center justify-center gap-8'>
-              {/* block1 */}
-               <div className='w-full bg-orange-300 gap-6 flex flex-col items-center justify-center'>
-                <div className='w-full h-34.75 bg-green-400'></div>
-                <p className='text-start tracking-[-0.14%] leading-[185%] text-[14px] text-(--color-para)'>I designed this for AI art generator website where focus is on best conversion plus now its working
-                   really good more than expectations and our users are enjoying it very and we are happy.</p>
-              </div>
-              
-             </div>
+in Sections:
+  there is all data files
+in components:
+   all pages and thier layouts
+
+
+
+  <div className=' flex flex-col gap-6 bg-pink-400'>
+
+
+                     {/* In blocks container */}
+                    <div className='flex flex-col gap-4'>
+
+                    <div className='w-full h-96 bg-[#f4f4f4] border border-[#EEEEEE]'></div>
+                 <div className='flex flex-col gap-1'>
+                        <p className='text-[14px] tracking-[-0.14%] leading-5 text-[#14161B] '>Funnel Congruence</p>
+                        <p className='text-(--color-text-dark) text-[14px] tracking-[-0.14%] leading-5'>CreativeOS</p>
+                    </div>
+
+                    </div>
+
+
+                 </div>

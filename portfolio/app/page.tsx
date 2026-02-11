@@ -19,7 +19,7 @@ const page = () => {
   return (
     <>
     <Navbar/>
-  <div className='relative w-full  min-h-screen  flex flex-col bg-[(--color-bg)]'>
+  <div className='relative w-full  min-h-screen  flex flex-col bg-[(--color-bg)] font-inter'>
 
 
     {/* block1 */}
@@ -32,13 +32,13 @@ const page = () => {
          <div className='flex items-center justify-center flex-col gap-4  sm:px-19 px-0'>
           <h1 className="font-caveat text-[#62636a] text-[20px] font-normal tracking-[-0.14%]">Hey, I’m Aqib</h1>
           <p className='text-[16px] tracking-[-0.14%] leading-[155%] text-center '>
-              <span className='block sm:hidden'>
+              <span className='block sm:hidden font-inter'>
                 With 4+ years of experience designing <br />
                B2B SaaS products, I’ve designed <br />
                  experiences across SaaS, fintech, <br />
                 and ERP platforms.
                 </span>
-            <span className='hidden sm:inline'>With 4+ years of experience designing B2B SaaS products, I’ve designed experiences across SaaS, fintech, and ERP platforms.</span>
+            <span className='hidden sm:inline font-inter'>With 4+ years of experience designing B2B SaaS products, I’ve designed experiences across SaaS, fintech, and ERP platforms.</span>
             </p>
          </div>
         </div>
