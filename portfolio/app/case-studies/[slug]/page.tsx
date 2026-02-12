@@ -42,7 +42,7 @@ const fallbackParagraph4 =
 "I started my research based on the problem and studied competitor apps patterns. Keeping the user in focus, I considered how we could provide an easy-to-use pattern that would allow users to pay bills quickly and easily. For more clarity, I conducted quantitative research with surveys and asked questions to my friends who mostly pay online. This process brought me more clarity, and then I mapped out the user journey. Subsequently, I created wireframes and then the UI design."
 
 const defaultBlocks: DetailBlock[] = [
-  { _type: "image",},
+  { _type: "image", image: "/pictures/blue.jpeg", alt: "Paybill case study cover" },
   {
     _type: "text",
     heading: "A Bit About Me",
