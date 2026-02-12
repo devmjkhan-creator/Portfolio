@@ -44,7 +44,7 @@ export default function RootLayout({
         `}
       >
         {children}
-        <div className="fixed bottom-0 left-0 right-0 z-[99] h-[200px] w-full pointer-events-none" aria-hidden="true">
+        <div className="fixed bottom-0 left-0 right-0 z-[99] h-[100px] w-full pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0 z-[70] [backdrop-filter:blur(1px)] [-webkit-backdrop-filter:blur(1px)] [mask:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)_10%,rgba(0,0,0,1)_30%,rgba(0,0,0,0)_40%)]" />
           <div className="absolute inset-0 z-[60] [backdrop-filter:blur(2px)] [-webkit-backdrop-filter:blur(2px)] [mask:linear-gradient(rgba(0,0,0,0)_10%,rgba(0,0,0,1)_20%,rgba(0,0,0,1)_40%,rgba(0,0,0,0)_50%)]" />
           <div className="absolute inset-0 z-[50] [backdrop-filter:blur(4px)] [-webkit-backdrop-filter:blur(4px)] [mask:linear-gradient(rgba(0,0,0,0)_15%,rgba(0,0,0,1)_30%,rgba(0,0,0,1)_50%,rgba(0,0,0,0)_60%)]" />
