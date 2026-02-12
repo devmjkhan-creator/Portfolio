@@ -290,3 +290,29 @@ export default function CaseStudyDetailPage() {
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="fixed inset-x-0 top-0 isolate z-[10] h-50"><div style="-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px)" class="absolute inset-0 gradient-mask-b-0 blur-[1px]">
+</div><div style="-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)" class="absolute inset-0 gradient-mask-b-0 blur-[2px]">
+</div><div style="-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)" class="absolute inset-0 gradient-mask-b-0 blur-[3px]">
+</div><div style="-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)" class="absolute inset-0 gradient-mask-b-0 blur-[6px]">
+</div><div style="-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)" class="absolute inset-0 gradient-mask-b-0 blur-[12px]"></div></div>
+<div class="fixed inset-x-0 bottom-0 isolate z-[10] h-100"><div style="-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px)" class="absolute inset-0 gradient-mask-t-0 blur-[1px]"></div>
+<div style="-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)" class="absolute inset-0 gradient-mask-t-0 blur-[2px]"></div><div style="-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)" class="absolute inset-0 gradient-mask-t-0 blur-[3px]"></div>
+<div style="-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)" class="absolute inset-0 gradient-mask-t-0 blur-[6px]"></div><div style="-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)" class="absolute inset-0 gradient-mask-t-0 blur-[12px]"></div></div>
+<div style="-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px)" class="absolute inset-0 gradient-mask-t-0 blur-[1px]"></div>
+<div style="-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)" class="absolute inset-0 gradient-mask-t-0 blur-[2px]"></div>
+<div style="-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)" class="absolute inset-0 gradient-mask-t-0 blur-[3px]"><div style="-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)" class="absolute inset-0 gradient-mask-t-0 blur-[2px]"></div></div>
+<div style="-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)" class="absolute inset-0 gradient-mask-t-0 blur-[6px]"></div>
+<div style="-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)" class="absolute inset-0 gradient-mask-t-0 blur-[12px]"></div>
