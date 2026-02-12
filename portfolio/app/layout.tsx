@@ -44,42 +44,15 @@ export default function RootLayout({
         `}
       >
         {children}
-        <div className="fixed bottom-0 left-0 z-30 w-full flex items-end justify-center pointer-events-none">
-          <div className="absolute inset-x-0 -top-6 h-10 bg-linear-to-t  to-transparent blur-xl"
-          />
-          <div
-            className="w-full h-40 backdrop-saturate-150"
-            style={{
-               background: `
-              linear-gradient(
-        to top,
-        rgba(255,255,255,0.95) 0%,
-        rgba(255,255,255,0.6) 35%,
-        rgba(255,255,255,0.25) 60%,
-        rgba(255,255,255,0.1) 80%,
-        transparent 100%
-      )
-    `,
-           WebkitMaskImage: `
-        linear-gradient(
-         to top,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-
-        )
-      `,
-               maskImage: `
-        linear-gradient(
-            to top,
-    rgba(0, 0, 0, 1) 0%,   /* Fully blurred */
-    rgba(0, 0, 0, 0) 100%  /* Fully clear */
-
-        )
-      `,
-              backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)" }}
-            aria-hidden="true"
-            
-          />
+        <div className="fixed bottom-0 left-0 right-0 z-[99] h-[200px] w-full pointer-events-none" aria-hidden="true">
+          <div className="absolute inset-0 z-[70] [backdrop-filter:blur(1px)] [-webkit-backdrop-filter:blur(1px)] [mask:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)_10%,rgba(0,0,0,1)_30%,rgba(0,0,0,0)_40%)]" />
+          <div className="absolute inset-0 z-[60] [backdrop-filter:blur(2px)] [-webkit-backdrop-filter:blur(2px)] [mask:linear-gradient(rgba(0,0,0,0)_10%,rgba(0,0,0,1)_20%,rgba(0,0,0,1)_40%,rgba(0,0,0,0)_50%)]" />
+          <div className="absolute inset-0 z-[50] [backdrop-filter:blur(4px)] [-webkit-backdrop-filter:blur(4px)] [mask:linear-gradient(rgba(0,0,0,0)_15%,rgba(0,0,0,1)_30%,rgba(0,0,0,1)_50%,rgba(0,0,0,0)_60%)]" />
+          <div className="absolute inset-0 z-[40] [backdrop-filter:blur(8px)] [-webkit-backdrop-filter:blur(8px)] [mask:linear-gradient(rgba(0,0,0,0)_20%,rgba(0,0,0,1)_40%,rgba(0,0,0,1)_60%,rgba(0,0,0,0)_70%)]" />
+          <div className="absolute inset-0 z-[30] [backdrop-filter:blur(16px)] [-webkit-backdrop-filter:blur(16px)] [mask:linear-gradient(rgba(0,0,0,0)_40%,rgba(0,0,0,1)_60%,rgba(0,0,0,1)_80%,rgba(0,0,0,0)_90%)]" />
+          <div className="absolute inset-0 z-[20] [backdrop-filter:blur(32px)] [-webkit-backdrop-filter:blur(32px)] [mask:linear-gradient(rgba(0,0,0,0)_60%,rgba(0,0,0,1)_80%)]" />
+          <div className="absolute inset-0 z-[10] [backdrop-filter:blur(64px)] [-webkit-backdrop-filter:blur(64px)] [mask:linear-gradient(rgba(0,0,0,0)_70%,rgba(0,0,0,1)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(transparent,rgba(255,255,255,0.9))]" />
         </div>
       </body>
     </html>
