@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
     <div className='w-full sm:h-[8.60vh] h-[8vh] bg-(--color-bg) fixed top-0 left-0 border-b-[#E3E4E8] border-b flex items-center justify-center z-50 font-inter'>
-        <div className='relative mx-auto w-full sm:max-w-[39.875em] border-r-[#E3E4E8] border-l-[#E3E4E8] sm:border-r sm:border-l h-full items-center justify-between flex flex-row px-5 sm:px-10'>
+        <div className='relative mx-auto w-full max-w-[39.875em] border-r-[#E3E4E8] border-l-[#E3E4E8] sm:border-r sm:border-l h-full items-center justify-between flex flex-row px-5 sm:px-10'>
        
                <div>
                 <Link href="/" className='inline-block'>

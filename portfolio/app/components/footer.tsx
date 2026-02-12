@@ -100,7 +100,7 @@ const Footer = () => {
 
     {/* block6 */}
     <div className='w-full  flex items-center justify-center font-inter'>
-      <div className='w-full sm:w-[39.875em] h-full sm:border-r border-r-(--color-border)  sm:border-l border-l-(--color-border) sm:py-10 py-8 items-center flex justify-center'>
+      <div className='w-full max-w-[39.875em] h-full sm:border-r border-r-(--color-border)  sm:border-l border-l-(--color-border) sm:py-10 py-8 items-center flex justify-center'>
         <p className='text-[14px] tracking-[-0.6%] leading-5 text-(--color-text-dark)'>© 2026 Aqib.</p>
       </div>
     </div>

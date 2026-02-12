@@ -19,13 +19,13 @@ const page = () => {
   return (
     <>
     <Navbar/>
-  <div className='relative w-full  min-h-screen  flex flex-col bg-[(--color-bg)] font-inter'>
+  <div className='relative w-full min-h-screen flex flex-col bg-[(--color-bg)] font-inter overflow-x-hidden'>
 
 
     {/* block1 */}
     <div className='w-full relative flex items-center justify-center border-b border-b-(--color-border)'>
 
-      <div className='w-full max-w-[39.875em] mx-auto relative sm:pb-8 pb-25 sm:border-r border-r-(--color-border) px-5 sm:px-[2.3em]  sm:border-l border-l-(--color-border)'>
+      <div className='w-full max-w-[39.875em] mx-auto relative sm:pb-8 pb-25 sm:border-r border-r-(--color-border) px-5 sm:px-10 sm:border-l border-l-(--color-border)'>
          {/* home heading */}
         <div className='  sm:mt-[19.50vh]  flex flex-col items-center justify-center gap-5 mt-20'>
          <div><img src='/pictures/profileimg.svg' alt="Profile" className=" object-cover bg-center" /></div>
@@ -82,7 +82,7 @@ const page = () => {
 
     {/* block2 */}
     <div className='w-full  flex items-center justify-center border-b border-b-(--color-border) '>
-      <div className='w-full sm:w-[39.875em]  h-full sm:border-r border-r-(--color-border) sm:px-10 px-5  sm:py-[12.30vh] py-[13.80vh]  sm:border-l border-l-(--color-border) flex flex-col items-center justify-center'>
+      <div className='w-full max-w-[39.875em] h-full sm:border-r border-r-(--color-border) sm:px-10 px-5  sm:py-[12.30vh] py-[13.80vh]  sm:border-l border-l-(--color-border) flex flex-col items-center justify-center'>
        <p className='tracking-[-0.14%] leading-5 text-[14px] '>Casestudies</p>
         {/* Innerblock */}
 
@@ -93,7 +93,7 @@ const page = () => {
 
     {/* block3 */}
     <div className='w-full   flex items-center justify-center border-b border-b-(--color-border)'>
-      <div className='w-full sm:w-[39.875em] sm:border-r gap-16.25 border-r-(--color-border) sm:border-l border-l-(--color-border) sm:px-18 px-5 sm:py-25 py-[13.80vh] flex items-center justify-center flex-col'>
+      <div className='w-full max-w-[39.875em] sm:border-r gap-16.25 border-r-(--color-border) sm:border-l border-l-(--color-border) sm:px-18 px-5 sm:py-25 py-[13.80vh] flex items-center justify-center flex-col'>
         <h1 className='text-[14px]'>What I Do</h1>
         <div className='text-[14px] text-[#46484E] flex flex-col gap-7'>
         <p className='tracking-[-0.14%] leading-[185%] text-center'>  I design digital products that are simple, clear, and user-focused.</p>
@@ -107,7 +107,7 @@ const page = () => {
 
     {/* block4 */}
     <div className='w-full   flex items-center justify-center border-b border-b-(--color-border)'>
-      <div className='w-full  sm:w-[39.875em]  sm:py-[12.30vh] py-[13.80vh]  gap-[7.80vh] sm:border-r border-r-(--color-border) flex-col  sm:border-l border-l-(--color-border) flex items-center sm:px-0 px-5'>
+      <div className='w-full max-w-[39.875em] sm:py-[12.30vh] py-[13.80vh] gap-[7.80vh] sm:border-r border-r-(--color-border) flex-col sm:border-l border-l-(--color-border) flex items-center sm:px-0 px-5'>
         <h1 className='text-[14px] tracking-[-0.14%] leading-5 text-(--color-primary-text)'>Work Experience</h1>
 
         {/* InnerblockS */}

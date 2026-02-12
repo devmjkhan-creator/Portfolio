@@ -11,7 +11,7 @@ const creativelabpage = ({image, paragraph, para2, slug}:Creativelabprops) => {
   return (
     
                     <div className='w-full gap-6 flex flex-col'>
-                        <div className='sm:h-80 h-50 w-full bg-[#EEEEEE]'>
+                        <div className='w-full aspect-[7/4] bg-[#EEEEEE] overflow-hidden'>
                              {image && <img src={image} alt={slug} className="w-full h-full object-cover" />}
                         </div>
                         <div className=' w-full flex flex-col gap-4 tracking-[-0.14%] leading-[185%] text-[14px] text-(--color-para)'>

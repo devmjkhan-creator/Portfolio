@@ -180,7 +180,7 @@ function renderBlock(block: DetailBlock, index: number) {
   if (block._type === "image") {
     return (
       <div key={`image-${index}`} className="flex flex-col gap-3 items-center">
-        <div className="bg-[#EEEEEE] w-full sm:h-79.75 h-[201.08px] overflow-hidden">
+        <div className="bg-[#EEEEEE] w-full aspect-[7/4] overflow-hidden">
           {block.image && <img src={block.image} alt={block.alt || block.caption || "Case study"} className="w-full h-full object-cover" />}
         </div>
         {block.caption && (
