@@ -17,7 +17,7 @@ const Casestudypage = ({title,client,image,slug}:Casestudypageprops) => {
         </div>
         <div className='flex flex-col gap-1'>
           <p className='text-[14px]'>{title}</p>
-          <p className='text-(--color-text-dark)'>{client}</p>
+          <p className='text-(--color-text-dark) text-[14px]'>{client}</p>
         </div>
       </div>
     </Link>

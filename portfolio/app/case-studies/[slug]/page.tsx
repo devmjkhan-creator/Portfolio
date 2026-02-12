@@ -221,15 +221,20 @@ const CaseStudyDetailPage = () => {
       <Navbar />
       <div className="w-full min-h-screen relative flex items-center flex-col font-inter">
         <div className="w-full flex items-center justify-center border-b border-b-(--color-border)">
-          <div className="w-full relative max-w-[39.875em] items-center sm:border-r border-r-(--color-border) sm:border-l border-l-(--color-border) sm:px-10 px-5 sm:pt-7.5 pt-20 sm:pb-25 pb-25 flex flex-col gap-10 sm:gap-12.5">
-            <div className="flex flex-row items-center w-full  gap-1">
-              <i>
-                <img src={Arrowleft.src} alt="Back" />
-              </i>
-              <p onClick={() => router.back()} className="text-[14px] cursor-pointer">
-                Back
-              </p>
+          <div className="w-full relative max-w-[39.875em] items-center sm:border-r border-r-(--color-border) sm:border-l border-l-(--color-border) sm:px-10 px-5 sm:pt-7.5 pt-20 sm:pb-25 pb-25 flex flex-col gap-0">
+            <div className="w-full fixed sm:top-[8.60vh] top-[8vh] left-0 z-40 flex items-center justify-center">
+              <div className="w-full max-w-[39.875em] sm:border-r backdrop-blur-[15px] opacity-85 border-r-(--color-border) h-17 sm:border-l border-l-(--color-border) sm:px-10 px-5 py-6 bg-[#FFFFFF]">
+                <div className="flex flex-row items-center w-full  gap-1">
+                  <i>
+                    <img src={Arrowleft.src} alt="Back" />
+                  </i>
+                  <p onClick={() => router.back()} className="text-[14px] cursor-pointer">
+                    Back
+                  </p>
+                </div>
+              </div>
             </div>
+            <div className="w-full h-17.5" aria-hidden="true" />
 
             <div className="w-full flex flex-col items-center gap-10">
                <div className="w-full flex flex-col gap-4">
