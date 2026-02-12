@@ -48,7 +48,7 @@ export default function RootLayout({
           <div className="absolute inset-x-0 -top-6 h-10 bg-linear-to-t  to-transparent blur-xl"
           />
           <div
-            className="w-full h-50 backdrop-saturate-150"
+            className="w-full h-48 backdrop-saturate-150"
             style={{
                background: `
               linear-gradient(
@@ -60,15 +60,15 @@ export default function RootLayout({
         transparent 100%
       )
     `,
-      maskImage: `
-        linear-gradient(
-          to top,
-          #000 0%,
-          #000 40%,
-          rgba(0,0,0,0.6) 65%,
-          transparent 100%
-        )
-      `,
+            maskImage: `
+            linear-gradient(
+            to top,
+            #000 0%,
+            #000 40%,
+            rgba(0,0,0,0.6) 65%,
+            transparent 100%
+            )
+            `,
               
               backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(12px)" }}
             aria-hidden="true"

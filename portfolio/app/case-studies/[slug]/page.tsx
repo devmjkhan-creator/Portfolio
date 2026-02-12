@@ -54,7 +54,7 @@ const defaultBlocks: DetailBlock[] = [
   { _type: "text", heading: "Context", tone: "dark", paragraphs: [fallbackParagraph] },
   { _type: "text", heading: "Problem Statement", tone: "dark", paragraphs: [fallbackparagraph2] },
   { _type: "text", heading: "Crafted Solution", tone: "dark" , paragraphs:[]},
-  { _type: "image",},
+  { _type: "image", image: "/pictures/benparker.jpeg", alt: "Crafted solution visual" },
   { _type: "text", heading: "Why did I choose this project?", tone: "dark", paragraphs: [fallbackParagraph3] },
    { _type: "text", heading: "Design Process", tone: "dark", paragraphs: [fallbackParagraph4] },
    { _type: "image", caption:"Information Architecture"},
