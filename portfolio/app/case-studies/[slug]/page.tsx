@@ -227,9 +227,9 @@ const CaseStudyDetailPage = () => {
                 className="absolute inset-0 bg-white/35 backdrop-saturate-150"
                 style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}
               />
-              <div className="absolute inset-x-0 -bottom-6 h-10 bg-gradient-to-b from-white/40 via-white/20 to-transparent blur-xl pointer-events-none" />
+              <div className="absolute inset-x-0 -bottom-6 h-10 bg-linear-to-b from-white/40 via-white/20 to-transparent blur-xl pointer-events-none" />
               <div className="relative w-full max-w-[39.875em] sm:border-r border-r-(--color-border) h-17 sm:border-l border-l-(--color-border) sm:px-10 px-5 py-6">
-                <div className="relative z-10 flex flex-row items-center w-full gap-1">
+                <div className="relative z-10 flex flex-row  items-center w-full gap-1">
                   <i>
                     <img src={Arrowleft.src} alt="Back" />
                   </i>
@@ -239,7 +239,7 @@ const CaseStudyDetailPage = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full h-17.5" aria-hidden="true" />
+            <div className="w-full sm:h-17.5" aria-hidden="true" />
 
             <div className="w-full flex flex-col items-center gap-10">
                <div className="w-full flex flex-col gap-4">

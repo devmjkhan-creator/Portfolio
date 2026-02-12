@@ -44,7 +44,7 @@ export default function RootLayout({
         `}
       >
         {children}
-        <div className="fixed inset-x-0 bottom-0 isolate z-[10] h-[100px] pointer-events-none">
+        <div className="fixed inset-x-0 bottom-0 isolate z-10 h-25 pointer-events-none">
           <div className="absolute inset-0" style={{ backdropFilter: "blur(1px)", WebkitBackdropFilter: "blur(1px)", maskImage: "linear-gradient(to bottom, transparent, black 20%, black 55%, black 100%)", WebkitMaskImage: "linear-gradient(to bottom, transparent, black 20%, black 55%, black 100%)" }} />
           <div className="absolute inset-0" style={{ backdropFilter: "blur(2px)", WebkitBackdropFilter: "blur(2px)", maskImage: "linear-gradient(to bottom, transparent 10%, black 30%, black 60%, black 100%)", WebkitMaskImage: "linear-gradient(to bottom, transparent 10%, black 30%, black 60%, black 100%)" }} />
           <div className="absolute inset-0" style={{ backdropFilter: "blur(3px)", WebkitBackdropFilter: "blur(3px)", maskImage: "linear-gradient(to bottom, transparent 15%, black 35%, black 65%, black 100%)", WebkitMaskImage: "linear-gradient(to bottom, transparent 15%, black 35%, black 65%, black 100%)" }} />
