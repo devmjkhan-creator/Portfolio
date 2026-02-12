@@ -26,7 +26,7 @@ const Footer = () => {
             {/* button1 */}
            <div className='gap-[14.73px] flex flex-col items-center  '>
            <div
-            className='Card relative rounded-lg bg-center object-cover w-22.5 h-22.5 image-rendering-auto overflow-visible'>
+            className='Card relative rounded-lg bg-center object-cover w-22.5 h-22.5 image-rendering-auto overflow-visible opacity-0'>
             <div className='w-full h-full rounded-lg overflow-hidden'>
               <img src="/pictures/twittercard.svg" alt="TwitterCard" className='w-full h-full bg-center object-cover' />
             </div>
@@ -47,7 +47,7 @@ const Footer = () => {
             {/* button2 */}
            <div className='gap-[14.73px] flex flex-col items-center'>
             <div
-             className='Card relative rounded-lg bg-center object-cover w-22.5 h-22.5  image-rendering-auto  overflow-visible '>
+             className='Card relative rounded-lg bg-center object-cover w-22.5 h-22.5  image-rendering-auto  overflow-visible opacity-0'>
                <div className='w-full h-full rounded-lg overflow-hidden'>
                  <img src="/pictures/dribblecard.svg" alt="DribbleCard" className='w-full h-full bg-center object-cover' />
                </div>
@@ -69,7 +69,7 @@ const Footer = () => {
            {/* button3 */}
            <div className='gap-[14.73px] flex flex-col items-center '>
             <div
-             className='Card  relative  rounded-lg bg-center object-cover  image-rendering-auto w-22.5 h-22.5  overflow-visible '>
+             className='Card relative  rounded-lg bg-center object-cover  image-rendering-auto w-22.5 h-22.5  overflow-visible opacity-0'>
                <div className='w-full h-full rounded-lg overflow-hidden'>
                  <img src="/pictures/linkidencard.svg" alt="LinkidenCard" className='w-full h-full bg-center object-cover' />
                </div>
