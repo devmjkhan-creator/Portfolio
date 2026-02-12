@@ -30,7 +30,13 @@ const Footer = () => {
             <div className='w-full h-full rounded-lg overflow-hidden'>
               <img src="/pictures/twittercard.svg" alt="TwitterCard" className='w-full h-full bg-center object-cover' />
             </div>
-             <div> <img src="/pictures/twitter.svg" alt="TwitterLogo" className="absolute -left-6 bottom-1 w-11 h-11 object-contain"/> </div>
+             <div>
+              <img
+                src="/pictures/twitter.svg"
+                alt="TwitterLogo"
+                className="absolute -left-6 bottom-1 w-11 h-11 object-contain aspect-square overflow-visible transform-gpu pointer-events-none select-none"
+              />
+             </div>
             </div>
            <button
            className='mt-auto text-[14px] sm:w-[7vw] w-20 sm:h-[4.40vh] h-9 bg-(--color-btn) border-[#F4F4F4] tracking-[-0.14%] leading-5 sm:px-[22pxvw] px-5.5 sm:py-2 py-2 border-l border-r rounded-4xl border-t border-b items-center flex justify-center'>Twitter
@@ -45,7 +51,13 @@ const Footer = () => {
                <div className='w-full h-full rounded-lg overflow-hidden'>
                  <img src="/pictures/dribblecard.svg" alt="DribbleCard" className='w-full h-full bg-center object-cover' />
                </div>
-             <div> <img src="/pictures/dribble.svg" alt="Dribblelogo" className='w-11 h-11  overflow-visible  absolute bg-center object-contain bottom-1 -left-6 ' /></div>
+             <div>
+              <img
+                src="/pictures/dribble.svg"
+                alt="Dribblelogo"
+                className='w-11 h-11 overflow-visible absolute bg-center object-contain aspect-square bottom-1 -left-6 transform-gpu pointer-events-none select-none'
+              />
+             </div>
              </div>
        
            <button 
@@ -61,7 +73,13 @@ const Footer = () => {
                <div className='w-full h-full rounded-lg overflow-hidden'>
                  <img src="/pictures/linkidencard.svg" alt="LinkidenCard" className='w-full h-full bg-center object-cover' />
                </div>
-               <div><img src="/pictures/linkiden.svg" alt="Linkidenlogo" className='absolute bg-center object-contain bottom-3 -left-6 ' /></div>
+               <div>
+                <img
+                  src="/pictures/linkiden.svg"
+                  alt="Linkidenlogo"
+                  className='absolute bg-center object-contain aspect-square w-11 h-11 bottom-3 -left-6 transform-gpu pointer-events-none select-none'
+                />
+               </div>
              </div>
            <button
             className='text-[14px]   sm:w-[7vw] w-20 sm:h-[4.40vh] h-9 bg-(--color-btn) border-[#F4F4F4]  tracking-[-0.14%] leading-5 sm:px-[22pxvw] px-5.5 sm:py-2 py-2 border-l border-r rounded-4xl border-t border-b items-center flex justify-center'>LinkedIn
