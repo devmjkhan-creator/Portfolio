@@ -44,13 +44,6 @@ export default function RootLayout({
         `}
       >
         {children}
-        <div className="fixed inset-x-0 top-0 isolate z-[10] h-50 pointer-events-none">
-          <div className="absolute inset-0" style={{ backdropFilter: "blur(1px)", WebkitBackdropFilter: "blur(1px)", maskImage: "linear-gradient(to top, transparent, black 20%, black 55%, transparent 75%)", WebkitMaskImage: "linear-gradient(to top, transparent, black 20%, black 55%, transparent 75%)" }} />
-          <div className="absolute inset-0" style={{ backdropFilter: "blur(2px)", WebkitBackdropFilter: "blur(2px)", maskImage: "linear-gradient(to top, transparent 10%, black 30%, black 60%, transparent 80%)", WebkitMaskImage: "linear-gradient(to top, transparent 10%, black 30%, black 60%, transparent 80%)" }} />
-          <div className="absolute inset-0" style={{ backdropFilter: "blur(3px)", WebkitBackdropFilter: "blur(3px)", maskImage: "linear-gradient(to top, transparent 15%, black 35%, black 65%, transparent 85%)", WebkitMaskImage: "linear-gradient(to top, transparent 15%, black 35%, black 65%, transparent 85%)" }} />
-          <div className="absolute inset-0" style={{ backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)", maskImage: "linear-gradient(to top, transparent 25%, black 45%, black 75%, transparent 90%)", WebkitMaskImage: "linear-gradient(to top, transparent 25%, black 45%, black 75%, transparent 90%)" }} />
-          <div className="absolute inset-0" style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", maskImage: "linear-gradient(to top, transparent 35%, black 60%, black 90%, transparent 100%)", WebkitMaskImage: "linear-gradient(to top, transparent 35%, black 60%, black 90%, transparent 100%)" }} />
-        </div>
         <div className="fixed inset-x-0 bottom-0 isolate z-[10] h-[100px] pointer-events-none">
           <div className="absolute inset-0" style={{ backdropFilter: "blur(1px)", WebkitBackdropFilter: "blur(1px)", maskImage: "linear-gradient(to bottom, transparent, black 20%, black 55%, black 100%)", WebkitMaskImage: "linear-gradient(to bottom, transparent, black 20%, black 55%, black 100%)" }} />
           <div className="absolute inset-0" style={{ backdropFilter: "blur(2px)", WebkitBackdropFilter: "blur(2px)", maskImage: "linear-gradient(to bottom, transparent 10%, black 30%, black 60%, black 100%)", WebkitMaskImage: "linear-gradient(to bottom, transparent 10%, black 30%, black 60%, black 100%)" }} />
