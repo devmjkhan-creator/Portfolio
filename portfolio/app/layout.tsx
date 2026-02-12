@@ -45,11 +45,34 @@ export default function RootLayout({
       >
         {children}
         <div className="fixed bottom-0 left-0 z-30 w-full flex items-end justify-center pointer-events-none">
-          <div className="absolute inset-x-0 -top-6 h-10 bg-gradient-to-t from-white/40 via-white/20 to-transparent blur-xl" />
+          <div className="absolute inset-x-0 -top-6 h-10 bg-linear-to-t  to-transparent blur-xl"
+          />
           <div
-            className="w-full h-[100px] bg-white/35 backdrop-saturate-150"
-            style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}
+            className="w-full h-50 backdrop-saturate-150"
+            style={{
+               background: `
+              linear-gradient(
+        to top,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.6) 35%,
+        rgba(255,255,255,0.25) 60%,
+        rgba(255,255,255,0.1) 80%,
+        transparent 100%
+      )
+    `,
+      maskImage: `
+        linear-gradient(
+          to top,
+          #000 0%,
+          #000 40%,
+          rgba(0,0,0,0.6) 65%,
+          transparent 100%
+        )
+      `,
+              
+              backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(12px)" }}
             aria-hidden="true"
+            
           />
         </div>
       </body>
