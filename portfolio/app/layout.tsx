@@ -44,6 +44,14 @@ export default function RootLayout({
         `}
       >
         {children}
+        <div className="fixed bottom-0 left-0 z-30 w-full flex items-end justify-center pointer-events-none">
+          <div className="absolute inset-x-0 -top-6 h-10 bg-gradient-to-t from-white/40 via-white/20 to-transparent blur-xl" />
+          <div
+            className="w-full h-[100px] bg-white/35 backdrop-saturate-150"
+            style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}
+            aria-hidden="true"
+          />
+        </div>
       </body>
     </html>
   );

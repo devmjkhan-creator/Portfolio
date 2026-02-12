@@ -224,10 +224,12 @@ const CaseStudyDetailPage = () => {
           <div className="w-full relative max-w-[39.875em] items-center sm:border-r border-r-(--color-border) sm:border-l border-l-(--color-border) sm:px-10 px-5 sm:pt-7.5 pt-20 sm:pb-25 pb-25 flex flex-col gap-0">
             <div className="w-full fixed sm:top-[8.60vh] top-[8vh] left-0 z-40 flex items-center justify-center">
               <div
-                className="w-full max-w-[39.875em] sm:border-r border-r-(--color-border) h-17 sm:border-l border-l-(--color-border) sm:px-10 px-5 py-6 bg-white/45 backdrop-blur-2xl backdrop-saturate-150"
-                style={{ backdropFilter: "blur(24px)", WebkitBackdropFilter: "blur(24px)" }}
-              >
-                <div className="flex flex-row items-center w-full  gap-1">
+                className="absolute inset-0 bg-white/35 backdrop-saturate-150"
+                style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}
+              />
+              <div className="absolute inset-x-0 -bottom-6 h-10 bg-gradient-to-b from-white/40 via-white/20 to-transparent blur-xl pointer-events-none" />
+              <div className="relative w-full max-w-[39.875em] sm:border-r border-r-(--color-border) h-17 sm:border-l border-l-(--color-border) sm:px-10 px-5 py-6">
+                <div className="relative z-10 flex flex-row items-center w-full gap-1">
                   <i>
                     <img src={Arrowleft.src} alt="Back" />
                   </i>
