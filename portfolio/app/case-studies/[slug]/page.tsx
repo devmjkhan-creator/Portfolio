@@ -180,7 +180,7 @@ function renderBlock(block: DetailBlock, index: number) {
   if (block._type === "image") {
     return (
       <div key={`image-${index}`} className="flex flex-col gap-3 items-center">
-        <div className="bg-[#EEEEEE] w-full aspect-[7/4] overflow-hidden">
+        <div className="bg-[#EEEEEE] w-full aspect-7/4 overflow-hidden">
           {block.image && <img src={block.image} alt={block.alt || block.caption || "Case study"} className="w-full h-full object-cover" />}
         </div>
         {block.caption && (
@@ -228,12 +228,12 @@ const CaseStudyDetailPage = () => {
                 style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}
               />
               <div className="absolute inset-x-0 -bottom-6 h-10 bg-linear-to-b from-white/40 via-white/20 to-transparent blur-xl pointer-events-none" />
-              <div className="relative w-full max-w-[39.875em] sm:border-r border-r-(--color-border) h-17 sm:border-l border-l-(--color-border) sm:px-10 px-5 py-6">
+              <div onClick={() => router.back()} className="relative w-full max-w-[39.875em] sm:border-r border-r-(--color-border) h-17 bg-green-300 sm:border-l border-l-(--color-border) sm:px-10 px-5 py-6">
                 <div className="relative z-10 flex flex-row  items-center w-full gap-1">
                   <i>
-                    <img src={Arrowleft.src} alt="Back" />
+                    <img className="cursor-pointer" src={Arrowleft.src} alt="Back" />
                   </i>
-                  <p onClick={() => router.back()} className="text-[14px] cursor-pointer">
+                  <p className="text-[14px] cursor-pointer">
                     Back
                   </p>
                 </div>

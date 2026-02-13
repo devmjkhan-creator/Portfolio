@@ -12,7 +12,7 @@ const Casestudypage = ({title,client,image,slug}:Casestudypageprops) => {
   return (
     <Link href={`/case-studies/${slug}`}>
       <div className='flex flex-col gap-4 font-inter cursor-pointer'>
-        <div className='w-full aspect-[29/20] bg-[#f4f4f4] border border-[#EEEEEE] overflow-hidden'>
+        <div className='w-full aspect-7/4 bg-[#f4f4f4] border border-[#EEEEEE] overflow-hidden'>
           {image && <img src={image} alt={title} className="w-full h-full object-cover" />}
         </div>
         <div className='flex flex-col gap-1'>

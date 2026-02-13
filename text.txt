@@ -3,6 +3,8 @@ in Sections:
 in components:
    all pages and thier layouts
 
+casestudycard is component for homepage
+
 
 
  <div className="max-w-[39.875em] mx-auto px-5 py-20 flex flex-col gap-16">

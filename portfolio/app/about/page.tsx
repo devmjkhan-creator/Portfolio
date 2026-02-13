@@ -3,6 +3,7 @@ import Navbar from '../components/navbar'
 import logo1 from '@/public/pictures/logo1.svg'
 import logo3 from '@/public/pictures/logo3.svg'
 import logo4 from '@/public/pictures/logo4.svg'
+import Footer from '../components/footer'
 
 
 const page = () => {
@@ -11,9 +12,9 @@ const page = () => {
     <Navbar/>
     <div className='w-full min-h-screen  font-inter relative bg-[(--color-bg)] flex flex-col items-center'>
         <div className='w-full flex items-center justify-center  border-b border-b-(--color-border) '>
-            <div className='w-full relative max-w-[39.875em]  sm:border-r border-r-(--color-border) sm:border-l border-l-(--color-border)  sm:px-10 px-5  sm:py-25  py-20 flex flex-col gap-[68.44px]'>
-             <p>About me</p>
-              <div className='flex flex-col gap-[74.74px]  items-center justify-center'>
+            <div className='w-full relative max-w-[39.875em]  sm:border-r border-r-(--color-border) sm:border-l border-l-(--color-border) sm:px-10 px-5  sm:py-25  py-20 flex flex-col sm:gap-[68.44px] gap-10'>
+             <p className='text-[14px] traking-[-0.14%] leading-[185%] text-(--color-text-black)'>About me</p>
+              <div className='flex flex-col sm:gap-[74.74px] gap-10 items-center justify-center'>
                 <div className='w-full h-[244.82px] relative  flex flex-row items-center'>
                     <div className='absolute left-1/2 -translate-x-[132%] min-[646px]:left-0 min-[646px]:translate-x-0 min-[646px]:w-[199.58px] w-[126.66px] h-[155.37px] min-[646px]:h-[244.82px] bg-[#F4F4F4] -rotate-[6.06deg] border-[#FFFFFF] border-[5px] z-50'></div>
                     <div className='absolute left-1/2 -translate-x-1/2 min-[646px]:left-0 min-[646px]:translate-x-[92%] min-[646px]:w-[199.58px] w-[126.66px] h-[155.37px] min-[646px]:h-[244.82px]  bg-[#F4F4F4] rotate-[2.35deg] border-[5px] border-[#FFFFFF] z-40'></div>
@@ -54,6 +55,7 @@ const page = () => {
 
         </div>
     </div>      
+    <Footer/>
     </>
   )
 }
