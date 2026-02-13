@@ -8,8 +8,9 @@ type Casestudypageprops={
   slug :string
 }
 
+
 const Casestudypage = ({title,client,image,slug}:Casestudypageprops) => {
-  return (
+  return (  
     <Link href={`/case-studies/${slug}`}>
       <div className='flex flex-col gap-4 font-inter cursor-pointer'>
         <div className='w-full aspect-7/4 bg-[#f4f4f4] border border-[#EEEEEE] overflow-hidden'>
